@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Thomas Corberes</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="css/styles.css" type="text/css"/>
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <style>
+    body {
+      margin: 0;
+      /* font-family: sans-serif; */
+    }
+
+    .top-panel {
+      background-color: #f0f0f0;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .profile-img {
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      margin-right: 20px;
+    }
+
+    .top-left {
+      display: flex;
+      align-items: center;
+    }
+
+    .top-right a {
+      margin-left: 15px;
+      color: #333;
+      font-size: 1.5em;
+      text-decoration: none;
+    }
+
+    .top-right a:hover {
+      color: #007bff;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .publications-list {
+      font-size: 0.95em;
+      line-height: 1.6em;
+      padding-left: 0;
+      list-style-type: none;
+      counter-reset: pub;
+    }
+
+    .publications-list li {
+      counter-increment: pub;
+      position: relative;
+      padding-left: 2.2em;
+      margin-bottom: 1.2em;
+    }
+
+    .publications-list li::before {
+      content: "[" counter(pub) "]";
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    .profile-img {
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        object-position: 80% center; /* Adjust this value as needed */
+        margin-right: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="top-panel">
+    <div class="top-left">
+      <img src="photo.JPG" alt="Thomas Corberes" class="profile-img"/>
+      <h1>Thomas Corberes</h1>
+    </div>
+    <div class="top-right">
+      <a href="https://github.com/yourgithub" target="_blank" title="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://scholar.google.com/citations?user=yourID" target="_blank" title="Google Scholar">
+        <i class="fas fa-graduation-cap"></i>
+      </a>
+    </div>
+  </div>
+
+  <main role="main">
+    <div class="container">
+      <p>Associate researcher at </a>the University of Edinburgh and </a>Heriot-Watt University</p>
+
+      <h2>Publications</h2>
+      <ol class="publications-list">
+        <li>Thomas Corbères, Thomas Flayols, Pierre-Alexandre Léziart, Rohan Budhiraja, Philippe Souères, Guilhem Saurel, and Nicolas Mansard. <em>"Comparison of predictive controllers for locomotion and balance recovery of quadruped robots"</em>. In <strong>2021 IEEE International Conference on Robotics and Automation (ICRA)</strong>, pages 5021–5027, 2021.</li>
+
+        <li>Fanny Risbourg<sup>1</sup>, Thomas Corbères<sup>1</sup>, Pierre-Alexandre Léziart, Thomas Flayols, Nicolas Mansard, and Steve Tonneau. <em>"Real-time footstep planning and control of the solo quadruped robot in 3D environments"</em>. In <strong>2022 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</strong>, pages 12950–12956, 2022. <sup>1</sup>Joint first authors.</li>
+
+        <li>Pierre-Alexandre Léziart, Thomas Corbères, Thomas Flayols, Steve Tonneau, Nicolas Mansard, and Philippe Souères. <em>"Improved control scheme for the solo quadruped and experimental comparison of model predictive controllers"</em>. <strong>IEEE Robotics and Automation Letters (RA-L)</strong>, 7(4):9945–9952, 2022.</li>
+
+        <li>Carlos Mastalli, Saroj Prasad Chhatoi, Thomas Corbères, Steve Tonneau, and Sethu Vijayakumar. <em>"Inverse-dynamics MPC via nullspace resolution"</em>. <strong>IEEE Transactions on Robotics (TRO)</strong>, 39(4):3222–3241, 2023.</li>
+
+        <li>Jaehyun Shim, Carlos Mastalli, Thomas Corbères, Steve Tonneau, Vladimir Ivan, and Sethu Vijayakumar. <em>"Topology-based MPC for automatic footstep placement and contact surface selection"</em>. In <strong>2023 IEEE International Conference on Robotics and Automation (ICRA)</strong>, pages 12226–12232, 2023.</li>
+
+        <li>Thomas Corbères, Carlos Mastalli, Wolfgang Merkt, Ioannis Havoutis, Maurice Fallon, Nicolas Mansard, Thomas Flayols, Sethu Vijayakumar, and Steve Tonneau. <em>"Perceptive locomotion through whole-body MPC and optimal region selection"</em>. <strong>IEEE Access</strong>, 2024.</li>
+
+        <li>Gianni Lunardi, Thomas Corbères, Carlos Mastalli, Nicolas Mansard, Thomas Flayols, Steve Tonneau, and Andrea Del Prete. <em>"Reference-free model predictive control for quadrupedal locomotion"</em>. <strong>IEEE Access</strong>, 12:689–698, 2024.</li>
+
+        <li>Thomas Corbères. <em>"A Complete Framework for Agile Quadruped Locomotion: Integrating Real-Time Control, Planning, and Perception in Multi-Contact Environments"</em>. PhD thesis, The University of Edinburgh, 2024.</li>
+      </ol>
+    </div>
+  </main>
+</body>
+</html>
