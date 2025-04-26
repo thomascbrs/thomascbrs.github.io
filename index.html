@@ -1,121 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Thomas Corberes</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <!-- Font Awesome for icons -->
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <style>
-    html { scroll-behavior: smooth; }
-    body { margin: 0; font-family: sans-serif; }
-    /* Sticky top nav */
-    .top-panel {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    .top-panel-content {
-      max-width: 800px; /* Same as your main content */
-      margin: 0 auto; /* Center it */
-      position: sticky;
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 10px 20px; z-index: 100;
-      background: #eee;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    }
-    .site-title { font-size: 1.4em; font-weight: bold; }
-    .nav-links a {
-      margin-left: 20px; color: #333; text-decoration: none; font-size: 1em;
-    }
-    .nav-links a:hover { color: #007bff; }
-    /* Section styling */
-    section {
-      padding: 60px 20px; max-width: 800px; margin: 0 auto;
-      border-bottom: 1px solid #e0e0e0;
-    }
-    section:last-of-type { border-bottom: none; }
-    /* Home panel */
-    .home-panel {
-      display: flex; align-items: center; justify-content: space-between;
-      padding: 20px; flex-wrap: wrap;
-    }
-    .left-side { display: flex; flex-direction: column; align-items: center; }
-    .left-side img {
-      width: 120px; height: 120px; border-radius: 50%; object-fit: cover;
-      margin-bottom: 10px;
-    }
-    .icons { display: flex; gap: 15px; }
-    .icons a { color: #333; font-size: 1.5em; }
-    .icons a:hover { color: #007bff; }
-    .right-side { flex: 1; padding-left: 40px; font-size: 1.1em; color: #444; }
-    /* Projects grid */
-    .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-      gap: 20px;
-      margin-top: 20px;
-    }
-    .project-item {
-      display: flex; flex-direction: column;
-    }
-    .video-placeholder {
-      width: 100%; height: 0; padding-bottom: 56.25%; /* 16:9 ratio */
-      background: #ccc; position: relative;
-      display: flex; align-items: center; justify-content: center;
-      color: #666; font-size: 1em;
-    }
-    .video-placeholder span {
-      position: absolute;
-    }
-    .project-item h3 {
-      margin: 10px 0 5px;
-      font-size: 1.1em;
-    }
-    .project-item p {
-      font-size: 0.95em; line-height: 1.4;
-      color: #555;
-    }
-    /* Publications list */
-    .publications-list {
-      font-size: 0.95em; line-height: 1.6; list-style: none;
-      counter-reset: pub; padding-left: 0;
-    }
-    .publications-list li {
-      counter-increment: pub; position: relative;
-      padding-left: 2.2em; margin-bottom: 1.2em;
-    }
-    .publications-list li::before {
-      content: "[" counter(pub) "]";
-      position: absolute; left: 0; top: 0;
-    }
-    .project-item {
-      margin-bottom: 40px;
-      padding: 10px;
-    }
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="css/style.css">
 
-    .video-container {
-      position: relative;
-      width: 100%;
-      padding-bottom: 56.25%; /* 16:9 aspect ratio */
-      height: 0;
-      overflow: hidden;
-    }
-
-    .video-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: 0;
-}
-  </style>
 </head>
+
 <body>
 
   <!-- Sticky top panel -->
@@ -140,127 +37,143 @@
     </div>
   </div>
 
-
   <!-- Home section -->
   <section id="home">
     <div class="home-panel">
       <div class="left-side">
-        <img src="photo.JPG" alt="Thomas Corberes">
+        <img src="images/photo.JPG" alt="Thomas Corberes">
         <div class="icons">
-          <a href="https://github.com/thomascbrs"_blank" title="GitHub"><i class="fab fa-github"></i></a>
-          <a href="https://scholar.google.com/citations?user=yourID" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
-          <a href="/path/to/Thomas_Corberes_CV.pdf" download title="Download CV"><i class="fas fa-id-card"></i></a>
-          <a href="https://www.linkedin.com/in/yourprofile" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/thomascbrs" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://scholar.google.com/citations?user=qbcPQwsAAAAJ&hl=en" target="_blank"
+            title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+          <a href="files/cv_corberes.pdf" download title="Download CV"><i class="fas fa-file"></i></a>
+          <a href="https://www.linkedin.com/in/yourprofile" target="_blank" title="LinkedIn"><i
+              class="fab fa-linkedin"></i></a>
         </div>
       </div>
-      <div class="right-side">
-        <p>Associate researcher within the <strong> University of Edinburgh</strong>  and <strong>Heriot-Watt University</strong> . 
+      <div class="right-side" style="text-align: justify;">
+        <p><strong> About me</strong></p>
+        <p>I am currently an associate researcher within the <strong> University of Edinburgh</strong> and <strong>Heriot-Watt
+            University</strong> .
 
-          <p></p>My area of research includes <strong> Legged locomotion </strong> (humanoids and quadrupeds), <strong> Trajectory Optimisation</strong>
-          and <strong> Machine learning</strong>.</p>
+        <p></p>My area of research includes <strong> Legged locomotion </strong> (humanoids and quadrupeds), <strong>
+          Trajectory Optimisation</strong>
+        and <strong> Machine learning</strong>.</p>
       </div>
     </div>
   </section>
-  
+
 
   <!-- Experience placeholder -->
   <section id="experience">
     <h2>Experience</h2>
     <p>(Content coming soon…)</p>
   </section>
-    <!-- Experience placeholder -->
-    <section id="experience">
-      <h2>Experience</h2>
-      <p>(Content coming soon…)</p>
-    </section>
-      <!-- Experience placeholder -->
+  <!-- Experience placeholder -->
+  <section id="experience">
+    <h2>Experience</h2>
+    <p>(Content coming soon…)</p>
+  </section>
+  <!-- Experience placeholder -->
   <section id="experience">
     <h2>Experience</h2>
     <p>(Content coming soon…)</p>
   </section>
 
-  <!-- Project section with video placeholders -->
-  <!-- <section id="project">
-    <h2>Project</h2>
-    <div class="projects-grid">
-      <div class="project-item">
-        <div class="video-placeholder"><span>Video 1</span></div>
-        <h3>Project Title 1</h3>
-        <p>Brief description of project 1 goes here.</p>
-      </div>
-      <div class="project-item">
-        <div class="video-placeholder"><span>Video 2</span></div>
-        <h3>Project Title 2</h3>
-        <p>Brief description of project 2 goes here.</p>
-      </div>
-      <div class="project-item">
-        <div class="video-placeholder"><span>Video 3</span></div>
-        <h3>Project Title 3</h3>
-        <p>Brief description of project 3 goes here.</p>
-      </div>
-      <div class="project-item">
-        <div class="video-placeholder"><span>Video 4</span></div>
-        <h3>Project Title 4</h3>
-        <p>Brief description of project 4 goes here.</p>
-      </div>
-    </div>
-  </section>
-   -->
 
-   <section id="projects">
+  <!-- ===================================================================== 
+       ========================  PROJECTS ================================== 
+       ===================================================================== -->
+
+  <section id="projects">
     <h2>Projects</h2>
-  
+
     <div class="project-item">
-      <h3>Solo12 Jumping Demo</h3>
-  
+      <h3>Perceptive locomotion through whole-body MPC and optimal region selection</h3>
+
       <div class="video-container">
-        <iframe
-          id="demo-player"
+        <iframe id="project1-video"
           data-src="https://www.youtube.com/embed/bNVxTh0eixI?start=155&end=318&autoplay=1&loop=1&playlist=bNVxTh0eixI&mute=1"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+          allowfullscreen></iframe>
       </div>
-  
+
       <p>
-        Interfacing whole-body MPC with a Mixed-Integer <href>SL!M</href> for surface selection for the European h2020-Memmo project.
+        Interfacing <strong>Whole-Body MPC</strong> with a <strong>Mixed-Integer</strong>
+        <a href="https://arxiv.org/abs/1909.09044" target="_blank"
+          style="text-decoration: underline; color: inherit;">SL1M</a>
+        for surface selection for the European h2020-Memmo project. Full integration with real-time perceptive pipeline
+        for vision.
       </p>
+    </div>
+
+    <!-- Section 3 and 4 (Side by side smaller videos) -->
+    <div class="project-row">
+      <div class="project-item-small">
+        <h3>Contact planning on Solo12</h3>
+        <div class="video-container-small">
+          <iframe src="https://www.youtube.com/embed/gZprh_ofrfY?si=xwO_p4cdxu4TdKkr&amp;start=18" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+        <p> Real time contact planning and control of the Solo robot in 3d environments </p>
+      </div>
+
+      <div class="project-item-small">
+        <h3>Reinforcement learning on A1</h3>
+        <div class="video-container-small">
+          <iframe src="https://www.youtube.com/embed/bQLLFV-Oknc?start=41" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+        <p style="text-align: justify;">
+          Combining <strong>Trajectory Optimisation</strong> and <strong>Reinforcement Learning</strong>.
+          An efficient MPC is guided by high-level RL commands to reach the green ball, with heightmap information.
+        </p>
+      </div>
     </div>
   </section>
 
-  <!-- Publication list -->
+
+
+  <!-- ===================================================================== 
+       ========================  PUBLICATIONS ============================== 
+       ===================================================================== -->
   <section id="publications">
     <h2>Publications</h2>
     <ol class="publications-list">
-      <li>Thomas Corbères, Thomas Flayols, Pierre-Alexandre Léziart, Rohan Budhiraja, Philippe Souères, Guilhem Saurel, and Nicolas Mansard. <em>"Comparison of predictive controllers for locomotion and balance recovery of quadruped robots"</em>. In <strong>2021 IEEE International Conference on Robotics and Automation (ICRA)</strong>, pages 5021–5027, 2021.</li>
-      <li>Fanny Risbourg<sup>1</sup>, Thomas Corbères<sup>1</sup>, Pierre-Alexandre Léziart, Thomas Flayols, Nicolas Mansard, and Steve Tonneau. <em>"Real-time footstep planning and control of the solo quadruped robot in 3D environments"</em>. In <strong>2022 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</strong>, pages 12950–12956, 2022. <sup>1</sup>Joint first authors.</li>
-      <li>Pierre-Alexandre Léziart, Thomas Corbères, Thomas Flayols, Steve Tonneau, Nicolas Mansard, and Philippe Souères. <em>"Improved control scheme for the solo quadruped and experimental comparison of model predictive controllers"</em>. <strong>IEEE Robotics and Automation Letters (RA-L)</strong>, 7(4):9945–9952, 2022.</li>
-      <li>Carlos Mastalli, Saroj Prasad Chhatoi, Thomas Corbères, Steve Tonneau, and Sethu Vijayakumar. <em>"Inverse-dynamics MPC via nullspace resolution"</em>. <strong>IEEE Transactions on Robotics (TRO)</strong>, 39(4):3222–3241, 2023.</li>
-      <li>Jaehyun Shim, Carlos Mastalli, Thomas Corbères, Steve Tonneau, Vladimir Ivan, and Sethu Vijayakumar. <em>"Topology-based MPC for automatic footstep placement and contact surface selection"</em>. In <strong>2023 IEEE International Conference on Robotics and Automation (ICRA)</strong>, pages 12226–12232, 2023.</li>
-      <li>Thomas Corbères, Carlos Mastalli, Wolfgang Merkt, Ioannis Havoutis, Maurice Fallon, Nicolas Mansard, Thomas Flayols, Sethu Vijayakumar, and Steve Tonneau. <em>"Perceptive locomotion through whole-body MPC and optimal region selection"</em>. <strong>IEEE Access</strong>, 2024.</li>
-      <li>Gianni Lunardi, Thomas Corbères, Carlos Mastalli, Nicolas Mansard, Thomas Flayols, Steve Tonneau, and Andrea Del Prete. <em>"Reference-free model predictive control for quadrupedal locomotion"</em>. <strong>IEEE Access</strong>, 12:689–698, 2024.</li>
-      <li>Thomas Corbères. <em>"A Complete Framework for Agile Quadruped Locomotion: Integrating Real-Time Control, Planning, and Perception in Multi-Contact Environments"</em>. PhD thesis, The University of Edinburgh, 2024.</li>
+      <li>Thomas Corbères, Thomas Flayols, Pierre-Alexandre Léziart, Rohan Budhiraja, Philippe Souères, Guilhem Saurel,
+        and Nicolas Mansard. <em>"Comparison of predictive controllers for locomotion and balance recovery of quadruped
+          robots"</em>. In <strong>2021 IEEE International Conference on Robotics and Automation (ICRA)</strong>, pages
+        5021–5027, 2021.</li>
+      <li>Fanny Risbourg<sup>1</sup>, Thomas Corbères<sup>1</sup>, Pierre-Alexandre Léziart, Thomas Flayols, Nicolas
+        Mansard, and Steve Tonneau. <em>"Real-time footstep planning and control of the solo quadruped robot in 3D
+          environments"</em>. In <strong>2022 IEEE/RSJ International Conference on Intelligent Robots and Systems
+          (IROS)</strong>, pages 12950–12956, 2022. <sup>1</sup>Joint first authors.</li>
+      <li>Pierre-Alexandre Léziart, Thomas Corbères, Thomas Flayols, Steve Tonneau, Nicolas Mansard, and Philippe
+        Souères. <em>"Improved control scheme for the solo quadruped and experimental comparison of model predictive
+          controllers"</em>. <strong>IEEE Robotics and Automation Letters (RA-L)</strong>, 7(4):9945–9952, 2022.</li>
+      <li>Carlos Mastalli, Saroj Prasad Chhatoi, Thomas Corbères, Steve Tonneau, and Sethu Vijayakumar.
+        <em>"Inverse-dynamics MPC via nullspace resolution"</em>. <strong>IEEE Transactions on Robotics (TRO)</strong>,
+        39(4):3222–3241, 2023.</li>
+      <li>Jaehyun Shim, Carlos Mastalli, Thomas Corbères, Steve Tonneau, Vladimir Ivan, and Sethu Vijayakumar.
+        <em>"Topology-based MPC for automatic footstep placement and contact surface selection"</em>. In <strong>2023
+          IEEE International Conference on Robotics and Automation (ICRA)</strong>, pages 12226–12232, 2023.</li>
+      <li>Thomas Corbères, Carlos Mastalli, Wolfgang Merkt, Ioannis Havoutis, Maurice Fallon, Nicolas Mansard, Thomas
+        Flayols, Sethu Vijayakumar, and Steve Tonneau. <em>"Perceptive locomotion through whole-body MPC and optimal
+          region selection"</em>. <strong>IEEE Access</strong>, 2024.</li>
+      <li>Gianni Lunardi, Thomas Corbères, Carlos Mastalli, Nicolas Mansard, Thomas Flayols, Steve Tonneau, and Andrea
+        Del Prete. <em>"Reference-free model predictive control for quadrupedal locomotion"</em>. <strong>IEEE
+          Access</strong>, 12:689–698, 2024.</li>
+      <li>Thomas Corbères. <em>"A Complete Framework for Agile Quadruped Locomotion: Integrating Real-Time Control,
+          Planning, and Perception in Multi-Contact Environments"</em>. PhD thesis, The University of Edinburgh, 2024.
+      </li>
     </ol>
   </section>
 
 
-  <script>
-    // When #project scrolls into view, swap in the iframe src to kick off autoplay/loop.
-    const projectSection = document.getElementById('projects');
-    const playerIframe   = document.getElementById('demo-player');
-  
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          // load and autoplay the video
-          playerIframe.src = playerIframe.dataset.src;
-          observer.disconnect();  // only need to load it once
-        }
-      });
-    }, { threshold: 0.25 });  // fires when 25% of the section is visible
-  
-    observer.observe(projectSection);
-  </script>
+  <script src="js/script.js"></script>
 </body>
+
 </html>

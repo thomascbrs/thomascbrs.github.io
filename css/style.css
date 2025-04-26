@@ -1,0 +1,221 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* Sticky top nav */
+.top-panel {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.top-panel-content {
+    max-width: 800px;
+    /* Same as your main content */
+    margin: 0 auto;
+    /* Center it */
+    position: sticky;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    z-index: 100;
+    background: #eee;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    border-bottom-left-radius: 12px; /* <<< Add this */
+    border-bottom-right-radius: 12px; /* <<< And this */
+}
+
+.site-title {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.nav-links a {
+    margin-left: 20px;
+    color: #333;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+/* Section styling */
+section {
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+section:last-of-type {
+    border-bottom: none;
+}
+
+/* Home panel */
+.home-panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left-side img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-position: 80% center;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+}
+
+.icons a {
+    color: #333;
+    font-size: 1.5em;
+}
+
+.icons a:hover {
+    color: #007bff;
+}
+
+.right-side {
+    flex: 1;
+    padding-left: 40px;
+    font-size: 1.1em;
+    color: #444;
+}
+
+/* Projects grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.project-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.video-placeholder {
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    /* 16:9 ratio */
+    background: #ccc;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-size: 1em;
+}
+
+.video-placeholder span {
+    position: absolute;
+}
+
+.project-item h3 {
+    margin: 10px 0 5px;
+    font-size: 1.1em;
+}
+
+.project-item p {
+    font-size: 0.95em;
+    line-height: 1.4;
+    color: #555;
+}
+
+/* Publications list */
+.publications-list {
+    font-size: 0.95em;
+    line-height: 1.6;
+    list-style: none;
+    counter-reset: pub;
+    padding-left: 0;
+    text-align: justify; 
+}
+
+.publications-list li {
+    counter-increment: pub;
+    position: relative;
+    padding-left: 2.2em;
+    margin-bottom: 1.2em;
+}
+
+.publications-list li::before {
+    content: "[" counter(pub) "]";
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.project-item {
+    margin-bottom: 40px;
+    padding: 10px;
+}
+
+/* Adjusted width to fit side by side for smaller videos */
+.project-item-small {
+    width: 48%;
+    /* Adjust the width to make them smaller and fit side by side */
+    box-sizing: border-box;
+}
+
+/* Container for smaller videos to be side by side */
+.project-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    /* Ensures the items can wrap to the next line if necessary */
+}
+
+.video-container {
+    position: relative;
+    width: 95%;
+    padding-bottom: 56.25%;
+    /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    margin-left: auto;
+    /* Centers the container horizontally */
+    margin-right: auto;
+    /* Centers the container horizontally */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.video-container-small iframe {
+    width: 100%;
+    height: 200px;
+    /* Smaller height for the side-by-side videos */
+}
