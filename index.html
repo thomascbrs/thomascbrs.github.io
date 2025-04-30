@@ -30,8 +30,8 @@
       <div class="site-title">Thomas Corberes</div>
       <nav class="nav-links">
         <a href="#home">Home</a>
-        <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
         <a href="#publications">Publications</a>
       </nav>
     </div>
@@ -53,32 +53,33 @@
       </div>
       <div class="right-side" style="text-align: justify;">
         <p><strong> About me</strong></p>
-        <p>I am currently an associate researcher within the <strong> University of Edinburgh</strong> and <strong>Heriot-Watt
+        <p>I am currently an associate researcher within the <strong> University of Edinburgh</strong> and
+          <strong>Heriot-Watt
             University</strong> .
 
         <p></p>My area of research includes <strong> Legged locomotion </strong> (humanoids and quadrupeds), <strong>
           Trajectory Optimisation</strong>
         and <strong> Machine learning</strong>.</p>
+
+        <p>During my PhD, I worked across the entire locomotion pipeline, from <em>vision-based perception</em>
+          (extracting
+          convex surfaces from heightmaps), to <em>trajectory planning</em> using optimal control, and finally to
+          <em>low-level
+            control</em> through <strong>ROS</strong> Control for full system integration. I primarily used
+          <strong>Python</strong> for
+          prototyping and <strong>C++</strong> for performance-critical integration.
+        </p>
+
+        <p>In the context of machine learning, I am experienced with <strong>JAX</strong> and <strong>PyTorch</strong>.
+          For
+          motion planning and control, I have worked extensively with <strong>Crocoddyl</strong>,
+          <strong>MuJoCo</strong>, <strong>Pybullet</strong> and
+          <strong>Pinocchio</strong>.
+        </p>
       </div>
     </div>
   </section>
 
-
-  <!-- Experience placeholder -->
-  <section id="experience">
-    <h2>Experience</h2>
-    <p>(Content coming soon…)</p>
-  </section>
-  <!-- Experience placeholder -->
-  <section id="experience">
-    <h2>Experience</h2>
-    <p>(Content coming soon…)</p>
-  </section>
-  <!-- Experience placeholder -->
-  <section id="experience">
-    <h2>Experience</h2>
-    <p>(Content coming soon…)</p>
-  </section>
 
 
   <!-- ===================================================================== 
@@ -104,41 +105,112 @@
         <a href="https://arxiv.org/abs/1909.09044" target="_blank"
           style="text-decoration: underline; color: inherit;">SL1M</a>
         for surface selection for the European h2020-Memmo project. Full integration with real-time perceptive pipeline
-        for vision.
+        for vision. <a href="https://github.com/thomascbrs/memmo_anymal" target="_blank"
+          style="text-decoration: underline; color: inherit;">Code available here.</a>
       </p>
     </div>
 
+
     <!-- Section 3 and 4 (Side by side smaller videos) -->
-    <div class="project-row">
-      <div class="project-item-small">
-        <h3>Contact planning on Solo12</h3>
-        <div class="video-container-small">
+    <div class="project-item">
+      <h3>Contact planning on Solo12</h2>
+        <div class="video-container">
           <iframe src="https://www.youtube.com/embed/gZprh_ofrfY?si=xwO_p4cdxu4TdKkr&amp;start=18" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
         </div>
-        <p> Real time contact planning and control of the Solo robot in 3d environments </p>
+
+        <p>Real time contact planning and control of the Solo robot in 3d environments. Reduced model MPC, interacting
+          with a
+          mixed-integer program.</p>
+    </div>
+
+    <div class="project-item">
+      <h3>Reinforcement learning on A1</h3>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/bQLLFV-Oknc?start=41" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+      <p style="text-align: justify;">
+        Combining <strong>Trajectory Optimisation</strong> and <strong>Reinforcement Learning</strong>.
+        An efficient MPC is guided by high-level RL commands to reach the green ball, with heightmap information. <a
+          href="https://github.com/thomascbrs/mjpc_rl" target="_blank"
+          style="text-decoration: underline; color: inherit;">Code available here.</a>
+      </p>
+    </div>
+  </section>
+
+
+  <!-- =====================================================================
+       ========================  EXPERIENCES  ==============================
+       ===================================================================== -->
+  <!-- EXPERIENCE SECTION -->
+  <section id="experience" class="design-section">
+    <h2>Experience</h2>
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-marker filled"></div>
+        <div class="timeline-box">
+          <h3>Postdoctoral Researcher</h3>
+          <p><strong>The University of Edinburgh/ Heriot Watt University</strong> — July 2024 to Present</p>
+          Collaboration with Dr. Steve Tonneau. Integration of a <strong>differentiable simulator</strong> into
+          policy-learning frameworks, enabling backpropagation of
+          gradients through simulation to improve sample efficiency compared to traditional zero-order methods for
+          <strong>Locomotion</strong> and
+          <strong>Manipulation</strong>. Most of the development was carried out in <strong>JAX</strong> and
+          <strong>MuJoCo-MJX</strong> framework.
+        </div>
       </div>
 
-      <div class="project-item-small">
-        <h3>Reinforcement learning on A1</h3>
-        <div class="video-container-small">
-          <iframe src="https://www.youtube.com/embed/bQLLFV-Oknc?start=41" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-box">
+          <h3>Ph.D. Informatics, IPAB</h3>
+          <p><strong>The University of Edinburgh</strong> — 2021 to 2024</p>
+          <p>PhD under the supervision of Dr. Steve Tonneau and Dr. Thomas Flayols within the Institute of Perception,
+            Action and
+            Behaviour (IPAB). Real-time synthesis of <strong>legged locomotion</strong> maneuvers in complex,
+            unstructured en-
+            vironments. Developed and integrated a fully autonomous locomotion pipeline including
+            <strong>perception</strong>,
+            motion and contact <strong>planning</strong>, and reactive control.</p>
         </div>
-        <p style="text-align: justify;">
-          Combining <strong>Trajectory Optimisation</strong> and <strong>Reinforcement Learning</strong>.
-          An efficient MPC is guided by high-level RL commands to reach the green ball, with heightmap information.
-        </p>
       </div>
+
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-box">
+          <h3>Master’s thesis</h3>
+          <p><strong>LAAS-CNRS (Toulouse, France)</strong> — 2020</p>
+          <p>Master’s thesis under the supervision of Nicolas Mansard. Implementation of a
+            Model Based Predictive Controller for a quadruped robot using a reduced model
+            dynamics.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-box">
+          <h3>French Graduate School of Aeronautics and Space, ISAE-SUPAERO</h3>
+          <p><strong>Toulouse, France</strong> — 2016 to 2020</p>
+          <p>Selective three year program leading to a French master’s degree, with
+            a multidisciplinary curriculum in Computer Science, Applied Mathematics, and
+            Physics</p>
+        </div>
+      </div>
+
     </div>
   </section>
 
 
 
-  <!-- ===================================================================== 
-       ========================  PUBLICATIONS ============================== 
+
+
+
+  <!-- =====================================================================
+       ========================  PUBLICATIONS ==============================
        ===================================================================== -->
   <section id="publications">
     <h2>Publications</h2>
@@ -156,10 +228,12 @@
           controllers"</em>. <strong>IEEE Robotics and Automation Letters (RA-L)</strong>, 7(4):9945–9952, 2022.</li>
       <li>Carlos Mastalli, Saroj Prasad Chhatoi, Thomas Corbères, Steve Tonneau, and Sethu Vijayakumar.
         <em>"Inverse-dynamics MPC via nullspace resolution"</em>. <strong>IEEE Transactions on Robotics (TRO)</strong>,
-        39(4):3222–3241, 2023.</li>
+        39(4):3222–3241, 2023.
+      </li>
       <li>Jaehyun Shim, Carlos Mastalli, Thomas Corbères, Steve Tonneau, Vladimir Ivan, and Sethu Vijayakumar.
         <em>"Topology-based MPC for automatic footstep placement and contact surface selection"</em>. In <strong>2023
-          IEEE International Conference on Robotics and Automation (ICRA)</strong>, pages 12226–12232, 2023.</li>
+          IEEE International Conference on Robotics and Automation (ICRA)</strong>, pages 12226–12232, 2023.
+      </li>
       <li>Thomas Corbères, Carlos Mastalli, Wolfgang Merkt, Ioannis Havoutis, Maurice Fallon, Nicolas Mansard, Thomas
         Flayols, Sethu Vijayakumar, and Steve Tonneau. <em>"Perceptive locomotion through whole-body MPC and optimal
           region selection"</em>. <strong>IEEE Access</strong>, 2024.</li>

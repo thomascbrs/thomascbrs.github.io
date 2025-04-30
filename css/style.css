@@ -28,8 +28,10 @@ body {
     z-index: 100;
     background: #eee;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-    border-bottom-left-radius: 12px; /* <<< Add this */
-    border-bottom-right-radius: 12px; /* <<< And this */
+    border-bottom-left-radius: 12px;
+    /* <<< Add this */
+    border-bottom-right-radius: 12px;
+    /* <<< And this */
 }
 
 .site-title {
@@ -154,7 +156,7 @@ section:last-of-type {
     list-style: none;
     counter-reset: pub;
     padding-left: 0;
-    text-align: justify; 
+    text-align: justify;
 }
 
 .publications-list li {
@@ -218,4 +220,60 @@ section:last-of-type {
     width: 100%;
     height: 200px;
     /* Smaller height for the side-by-side videos */
+}
+
+/* make background stay white */
+.design-section {
+    background: #fff;
+}
+
+/* the vertical timeline line */
+.timeline {
+    position: relative;
+    margin: 40px auto;
+    padding-left: 0px;
+    max-width: 800px;
+    border-left: 2px solid #ddd;
+
+    /* light grey line */
+}
+
+/* each row: marker + box */
+.timeline-item {
+    display: grid;
+    grid-template-columns: 6px 1fr;
+    align-items: start;
+    column-gap: 20px;
+    margin-bottom: 40px;
+}
+
+/* the circle markers */
+.timeline-marker {
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    border: 2px solid #aaa;
+    /* light grey border */
+    border-radius: 50%;
+    margin-left: -8px;
+    margin-top: 59px
+        /* center on line */
+}
+
+.timeline-marker.filled {
+    background: #aaa;
+    /* filled grey for current */
+}
+
+/* the content “cards” */
+.timeline-box {
+    background: #f0f0f0;
+    /* slightly darker grey box */
+    padding: 15px 20px;
+    border-radius: 6px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+}
+
+.timeline-box h3 {
+    margin-top: 0;
 }
